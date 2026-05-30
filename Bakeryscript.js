@@ -136,8 +136,8 @@ birthdayBlastCake.option=function(){
     console.log("chosse an option")
 }
 
-birthdayBlastCake.option2=function(){
-    console.log(`Hello customer,${this.}`)
-}
+// birthdayBlastCake.option2=function(){
+//     console.log(`Hello customer,${this.}`)
+// }
 
 console.log(birthdayBlastCake.option());

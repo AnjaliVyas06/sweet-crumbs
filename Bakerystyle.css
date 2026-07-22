@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +36,7 @@ body{
     text-decoration: none;
     color: #5c3b2e;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .nav-right{

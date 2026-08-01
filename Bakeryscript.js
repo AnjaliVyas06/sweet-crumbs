@@ -53,57 +53,6 @@ const homeProducts = {
     ]
 }
 
-console.log(document.querySelector(".cake-container"));
-
-const besrSellerSection = document.querySelector(".best-seller");
-
-const detailsSection = document.createElement('div');
-detailsSection.id = "product-details";
-
-homeProducts.bestSeller.forEach((product) => {
-    const card = document.createElement('div');
-    card.innerHTML = `
-    <p>${product.category}</p>
-<img src="${product.image}">
-<h2>${product.name}</h2>
-<p>${product.price}</p>
-`;
-    card.addEventListener("click", () => {
-        // detailsSection.innerHTML = "";
-        const title = document.createElement("h2");
-        title.textContent = product.name;
-        const price = document.createElement("p");
-        price.textContent = `Price: ${product.price}`;
-        const image = document.createElement("img");
-        image.src = product.image;
-        const description = document.createElement("p");
-        description.textContent = product.description;
-         const exploreBtn = document.createElement("button");
-        exploreBtn.textContent ="Explore";
-        exploreBtn.addEventListener("click",() =>{
-            console.log(product.category);
-        })
-        detailsSection.appendChild(title);
-        detailsSection.appendChild(price);
-        detailsSection.appendChild(image);
-        detailsSection.appendChild(description);
-        detailsSection.appendChild(exploreBtn);
-       
-
-
-    });
-    card.classList.add("cake-card");
-
-
-    const container = document.querySelector(".cake-container");
-    console.log(container);
-    console.log(card);
-    container.appendChild(card);
-    besrSellerSection.appendChild(detailsSection);
-  
-  
-})
-  
 
 const productsCollection = {
     bestSeller: {
@@ -111,6 +60,7 @@ const productsCollection = {
             {
                 id: 1,
                 bestSeller: true,
+                category: "Brownie",
                 name: "Chocolate Dream",
                 price: 299,
                 image:
@@ -119,6 +69,7 @@ const productsCollection = {
             {
                 id: 2,
                 bestSeller: true,
+                category: "Brownie",
                 name: "Fudge Fantasy",
                 price: 349,
                 image:
@@ -127,6 +78,8 @@ const productsCollection = {
             {
                 id: 3,
                 bestSeller: true,
+                category: "Brownie",
+
                 name: "Carmel Crunch",
                 price: 329,
                 image:
@@ -135,6 +88,8 @@ const productsCollection = {
             {
                 id: 4,
                 bestSeller: true,
+                category: "Brownie",
+
                 name: "Dark Cocao Delight",
                 price: 399,
                 image:
@@ -143,6 +98,8 @@ const productsCollection = {
             {
                 id: 5,
                 bestSeller: true,
+                category: "Brownie",
+
                 name: "Nutty Delight",
                 price: 379,
                 image:
@@ -151,6 +108,8 @@ const productsCollection = {
             {
                 id: 6,
                 bestSeller: true,
+                category: "Brownie",
+
                 name: "Hazelnut Brownie",
                 price: 429,
                 image:
@@ -159,6 +118,8 @@ const productsCollection = {
             {
                 id: 7,
                 bestSeller: true,
+                category: "Brownie",
+
                 name: "Mocha Melt",
                 price: 389,
                 image:
@@ -170,6 +131,7 @@ const productsCollection = {
             {
                 id: 1,
                 bestSeller: true,
+                category: "Bliss",
                 name: "Blueberry Bliss",
                 price: 249,
                 image:
@@ -178,6 +140,8 @@ const productsCollection = {
             {
                 id: 2,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Raspberry Bliss",
                 price: 289,
                 image:
@@ -186,6 +150,8 @@ const productsCollection = {
             {
                 id: 3,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Velvate Bliss",
                 price: 349,
                 image:
@@ -194,6 +160,8 @@ const productsCollection = {
             {
                 id: 4,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Citrus Burst",
                 price: 399,
                 image:
@@ -202,6 +170,8 @@ const productsCollection = {
             {
                 id: 5,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Coca Bliss",
                 price: 299,
                 image:
@@ -210,6 +180,8 @@ const productsCollection = {
             {
                 id: 6,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Pistachio Bliss",
                 price: 419,
                 image:
@@ -218,6 +190,8 @@ const productsCollection = {
             {
                 id: 7,
                 bestSeller: true,
+                category: "Bliss",
+
                 name: "Coffee Bliss",
                 price: 379,
                 image:
@@ -228,6 +202,7 @@ const productsCollection = {
         Cupcake: [
             {
                 id: 1,
+                category: "Cupcake",
                 name: "Vanilla Velvet Cupcake",
                 price: 149,
                 image:
@@ -235,6 +210,8 @@ const productsCollection = {
             },
             {
                 id: 2,
+                category: "Cupcake",
+
                 name: "Lotus Biscoff Cupcake",
                 price: 169,
                 image:
@@ -242,6 +219,8 @@ const productsCollection = {
             },
             {
                 id: 3,
+                category: "Cupcake",
+
                 name: "Cookie and Cream Cupcake",
                 price: 189,
                 image:
@@ -249,6 +228,8 @@ const productsCollection = {
             },
             {
                 id: 4,
+                category: "Cupcake",
+
                 name: "Strawberry Swirl Cupcake",
                 price: 179,
                 image:
@@ -256,6 +237,8 @@ const productsCollection = {
             },
             {
                 id: 5,
+                category: "Cupcake",
+
                 name: "Blueberry Bliss Cupcake",
                 price: 199,
                 image:
@@ -263,17 +246,21 @@ const productsCollection = {
             },
             {
                 id: 6,
+                category: "Cupcake",
+
                 name: "Caramel Crunch Cupcake",
                 price: 209,
                 image:
-                    "https://live.staticflickr.com/5673/22065043191_b31c0ddf6b_o.jpg",
+                    "https://i.pinimg.com/736x/43/31/0c/43310cd053cc2e4baf646dd0cbcd88d2.jpg",
             },
             {
                 id: 7,
+                category: "Cupcake",
+
                 name: "Oreo Delight Cupcake",
                 price: 229,
                 image:
-                    "https://images.pexels.com/photos/20030861/pexels-photo-20030861.jpeg",
+                    "https://i.pinimg.com/736x/33/da/34/33da34a1b75eaf381da246da5f605b7e.jpg",
             },
         ],
     },
@@ -391,9 +378,104 @@ const productsCollection = {
         ],
     },
 };
-console.log("prodcuts", productsCollection.bestSeller.Brownie);
 
-console.log(document.querySelector(".cake-container"));
+
+function displayCategory(selectedCategory) {
+
+    detailsSection.innerHTML = "";
+
+    selectedCategory.forEach((product) => {
+
+        const card = document.createElement("div");
+        card.classList.add("cake-card");
+
+        card.innerHTML = `
+            <p>${product.category}</p>
+            <img src="${product.image}">
+            <h2>${product.name}</h2>
+            <p>₹${product.price}</p>
+        `;
+
+        detailsSection.appendChild(card);
+
+    });
+
+}
+
+const container = document.querySelector(".cake-container");
+// console.log(document.querySelector(".cake-container"));
+
+const besrSellerSection = document.querySelector(".best-seller");
+
+const detailsSection = document.createElement('div');
+detailsSection.id = "product-details";
+
+homeProducts.bestSeller.forEach((product) => {
+    const card = document.createElement('div');
+    card.innerHTML = `
+    <p>${product.category}</p>
+    <img src="${product.image}">
+    <h2>${product.name}</h2>
+    <p>${product.price}</p>
+    `;
+    card.addEventListener("click", () => {
+
+        const leftDiv = document.createElement("div");
+        const rightDiv = document.createElement("div");
+
+        leftDiv.classList.add("details-left");
+        rightDiv.classList.add("details-right");
+
+
+        detailsSection.innerHTML = "";
+
+        const title = document.createElement("h2");
+        title.textContent = product.name;
+
+        const price = document.createElement("p");
+        price.textContent = `Price: ${product.price}`;
+
+        const image = document.createElement("img");
+        image.src = product.image;
+
+        const description = document.createElement("p");
+        description.textContent = product.description;
+
+        const exploreBtn = document.createElement("button");
+        exploreBtn.textContent = "Explore";
+
+        exploreBtn.addEventListener("click", () => {
+            // console.log(product.category);
+            const selectedCategory = productsCollection.bestSeller[product.category];
+            // console.log(selectedCategory);
+            displayCategory(selectedCategory);
+
+        })
+        detailsSection.appendChild(title);
+        detailsSection.appendChild(price);
+        detailsSection.appendChild(image);
+        detailsSection.appendChild(description);
+        detailsSection.appendChild(exploreBtn);
+
+
+
+    });
+    card.classList.add("cake-card");
+
+
+    // console.log(container);
+    // console.log(card);
+    container.appendChild(card);
+
+})
+besrSellerSection.appendChild(detailsSection);
+leftDiv.appendChild(image);
+
+
+
+// console.log("prodcuts", productsCollection.bestSeller.Brownie);
+
+// console.log(document.querySelector(".cake-container"));
 
 // productsCollection.bestSeller.Brownie.forEach((product) => {
 //     const card = document.createElement("div");

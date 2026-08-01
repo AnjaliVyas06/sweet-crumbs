@@ -181,6 +181,189 @@ body{
 
     line-height: 1.5;
 }
+
+/* #product-details{
+    display: none;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    max-width: 1100px;
+
+    background: white;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.details-left{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.details-right{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.details-left img{
+    width: 100%;
+    max-width: 420px;
+
+    border-radius: 20px;
+} */
+
+#product-details{
+
+    display:none;
+
+    margin:70px auto;
+
+    width:90%;
+    max-width:1200px;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    gap:60px;
+
+    align-items:center;
+
+    transition:.5s;
+}
+.details-left{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+.details-left img{
+
+    width:100%;
+
+    max-width:450px;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    transition:.4s;
+}
+
+.details-left img:hover{
+
+    transform:scale(1.03);
+
+}
+.details-right{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+}
+.details-right h2{
+
+    font-size:48px;
+
+    color:#5c3b2e;
+
+}
+.details-right p:first-of-type{
+
+    font-size:28px;
+
+    color:#d46a92;
+
+    font-weight:bold;
+
+}
+.details-right p:last-of-type{
+
+    font-size:18px;
+
+    color:#7a5c50;
+
+    line-height:1.9;
+
+}
+.details-right button{
+
+    width:190px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#442913;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+.details-right button:hover{
+
+    transform:translateY(-4px);
+
+    background:#be5b82;
+
+    box-shadow:0 10px 20px rgba(212,106,146,.35);
+
+}
+#product-details{
+
+    animation:fadeUp .5s ease;
+
+}
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
 /* SPECIAL CAKES SECTION */
 
 .special-cakes{

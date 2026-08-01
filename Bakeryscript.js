@@ -428,6 +428,7 @@ homeProducts.bestSeller.forEach((product) => {
 
 
         detailsSection.innerHTML = "";
+        detailsSection.style.display="flex";
 
         const title = document.createElement("h2");
         title.textContent = product.name;
@@ -451,11 +452,15 @@ homeProducts.bestSeller.forEach((product) => {
             displayCategory(selectedCategory);
 
         })
-        detailsSection.appendChild(title);
-        detailsSection.appendChild(price);
-        detailsSection.appendChild(image);
-        detailsSection.appendChild(description);
-        detailsSection.appendChild(exploreBtn);
+        leftDiv.appendChild(image);
+       
+        rightDiv.appendChild(title);
+        rightDiv.appendChild(price);
+        rightDiv.appendChild(description);
+        rightDiv.appendChild(exploreBtn);
+
+         detailsSection.appendChild(leftDiv);
+        detailsSection.appendChild(rightDiv);
 
 
 
@@ -469,7 +474,8 @@ homeProducts.bestSeller.forEach((product) => {
 
 })
 besrSellerSection.appendChild(detailsSection);
-leftDiv.appendChild(image);
+
+
 
 
 

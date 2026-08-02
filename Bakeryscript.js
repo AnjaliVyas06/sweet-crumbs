@@ -8,7 +8,13 @@ const homeProducts = {
             name: "Chocolate Dream",
             price: 299,
             image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200&auto=format&fit=crop",
-            description: "Rich chocolate piece with creamy frosting."
+            description: "Rich chocolate piece with creamy frosting.",
+
+            theme: {
+                button: "#5A3E2B",
+                price: "#7B4F2A",
+                shadow: "rgba(90,62,43,0.35)"
+            }
 
         },
         {
@@ -18,8 +24,13 @@ const homeProducts = {
             name: "Strawberry Bliss",
             price: 249,
             image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop",
-            description: "Fresh strawberry delight topped with sweetness."
+            description: "Fresh strawberry delight topped with sweetness.",
 
+            theme: {
+                button: "#E75480",
+                price: "#FF6B9A",
+                shadow: "rgba(231,84,128,0.35)"
+            }
         },
         {
             id: 3,
@@ -28,8 +39,13 @@ const homeProducts = {
             name: "Vanilla Heaven",
             price: 99,
             image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=1200&auto=format&fit=crop",
-            description: "Classic vanilla flavor with soft fluffy texture."
+            description: "Classic vanilla flavor with soft fluffy texture.",
 
+            theme: {
+                button: "#D8B46A",
+                price: "#FFBE00",
+                shadow: "rgba(216,180,106,0.35)"
+            }
         },
     ],
 
@@ -428,7 +444,7 @@ homeProducts.bestSeller.forEach((product) => {
 
 
         detailsSection.innerHTML = "";
-        detailsSection.style.display="flex";
+        detailsSection.style.display = "flex";
 
         const title = document.createElement("h2");
         title.textContent = product.name;
@@ -445,21 +461,29 @@ homeProducts.bestSeller.forEach((product) => {
         const exploreBtn = document.createElement("button");
         exploreBtn.textContent = "Explore";
 
+           exploreBtn.style.backgroundColor = product.theme.button;
+
+            price.style.color = product.theme.price;
+
+            exploreBtn.style.boxShadow = `0 10px 20px ${product.theme.shadow}`;
+
+            console.log(product);
+            console.log(product.theme);
+
         exploreBtn.addEventListener("click", () => {
             // console.log(product.category);
             const selectedCategory = productsCollection.bestSeller[product.category];
             // console.log(selectedCategory);
             displayCategory(selectedCategory);
-
         })
         leftDiv.appendChild(image);
-       
+
         rightDiv.appendChild(title);
         rightDiv.appendChild(price);
         rightDiv.appendChild(description);
         rightDiv.appendChild(exploreBtn);
 
-         detailsSection.appendChild(leftDiv);
+        detailsSection.appendChild(leftDiv);
         detailsSection.appendChild(rightDiv);
 
 

@@ -81,6 +81,12 @@ const productsCollection = {
                 price: 299,
                 image:
                     "https://images.pexels.com/photos/5386677/pexels-photo-5386677.jpeg",
+
+                theme: {
+                    button: "#5A3E2B",
+                    price: "#7B4F2A",
+                    shadow: "rgba(90,62,43,0.35)"
+                }
             },
             {
                 id: 2,
@@ -90,6 +96,11 @@ const productsCollection = {
                 price: 349,
                 image:
                     "https://images.pexels.com/photos/887850/pexels-photo-887850.jpeg",
+                theme: {
+                    button: "#411F0E",
+                    price: "#FFECB2",
+                    shadow: "rgba(216,180,106,0.35)"
+                }
             },
             {
                 id: 3,
@@ -100,6 +111,11 @@ const productsCollection = {
                 price: 329,
                 image:
                     "https://images.pexels.com/photos/29625645/pexels-photo-29625645.jpeg",
+                theme: {
+                    button: "#B86B25",
+                    price: "#C47A2C",
+                    shadow: "rgba(184,107,37,0.35)"
+                }
             },
             {
                 id: 4,
@@ -110,6 +126,11 @@ const productsCollection = {
                 price: 399,
                 image:
                     "https://images.pexels.com/photos/23826283/pexels-photo-23826283.jpeg",
+                theme: {
+                    button: "#3B2418",
+                    price: "#6B3E26",
+                    shadow: "rgba(59,36,24,0.35)"
+                }
             },
             {
                 id: 5,
@@ -120,6 +141,11 @@ const productsCollection = {
                 price: 379,
                 image:
                     "https://images.pexels.com/photos/6390686/pexels-photo-6390686.jpeg",
+                theme: {
+                    button: "#7A4E2D",
+                    price: "#A66A3F",
+                    shadow: "rgba(122,78,45,0.35)"
+                }
             },
             {
                 id: 6,
@@ -130,6 +156,11 @@ const productsCollection = {
                 price: 429,
                 image:
                     "https://images.pexels.com/photos/29727285/pexels-photo-29727285.jpeg",
+                theme: {
+                    button: "#6E473B",
+                    price: "#9C6C5E",
+                    shadow: "rgba(110, 71, 59, 0.35)"
+                }
             },
             {
                 id: 7,
@@ -140,6 +171,11 @@ const productsCollection = {
                 price: 389,
                 image:
                     "https://images.pexels.com/photos/17192194/pexels-photo-17192194.jpeg",
+                theme: {
+                    button: "#5C4033",
+                    price: "#8B5E3C",
+                    shadow: "rgba(92,64,51,0.35)"
+                }
             },
         ],
 
@@ -152,6 +188,11 @@ const productsCollection = {
                 price: 249,
                 image:
                     "https://images.pexels.com/photos/26341202/pexels-photo-26341202.jpeg",
+                theme: {
+                    button: "#3B4A6B",
+                    price: "#637AA6",
+                    shadow: "rgba(59, 74, 107, 0.35)"
+                }
             },
             {
                 id: 2,
@@ -162,6 +203,11 @@ const productsCollection = {
                 price: 289,
                 image:
                     "https://images.pexels.com/photos/26341203/pexels-photo-26341203.jpeg",
+                theme: {
+                    button: "#8C253B",
+                    price: "#C24D67",
+                    shadow: "rgba(140, 37, 59, 0.35)"
+                }
             },
             {
                 id: 3,
@@ -172,6 +218,11 @@ const productsCollection = {
                 price: 349,
                 image:
                     "https://images.pexels.com/photos/38020719/pexels-photo-38020719.jpeg",
+                theme: {
+                    button: "#731622",
+                    price: "#AC3346",
+                    shadow: "rgba(115, 22, 34, 0.35)"
+                }
             },
             {
                 id: 4,
@@ -182,6 +233,11 @@ const productsCollection = {
                 price: 399,
                 image:
                     "https://images.pexels.com/photos/6544212/pexels-photo-6544212.jpeg",
+                theme: {
+                    button: "#D97D24",
+                    price: "#FAA24B",
+                    shadow: "rgba(217, 125, 36, 0.35)"
+                }
             },
             {
                 id: 5,
@@ -192,6 +248,11 @@ const productsCollection = {
                 price: 299,
                 image:
                     "https://images.pexels.com/photos/7819053/pexels-photo-7819053.jpeg",
+                theme: {
+                    button: "#2E1A11",
+                    price: "#5E3A2B",
+                    shadow: "rgba(46, 26, 17, 0.35)"
+                }
             },
             {
                 id: 6,
@@ -202,6 +263,11 @@ const productsCollection = {
                 price: 419,
                 image:
                     "https://images.pexels.com/photos/15174733/pexels-photo-15174733.png",
+                theme: {
+                    button: "#5E7A52",
+                    price: "#8FA882",
+                    shadow: "rgba(94, 122, 82, 0.35)"
+                }
             },
             {
                 id: 7,
@@ -212,6 +278,11 @@ const productsCollection = {
                 price: 379,
                 image:
                     "https://images.pexels.com/photos/1190165/pexels-photo-1190165.jpeg",
+                theme: {
+                    button: "#4A3525",
+                    price: "#80604A",
+                    shadow: "rgba(74, 53, 37, 0.35)"
+                }
             },
         ],
 
@@ -223,6 +294,12 @@ const productsCollection = {
                 price: 149,
                 image:
                     "https://images.pexels.com/photos/28122543/pexels-photo-28122543.jpeg",
+                theme: {
+                    button: "#D9C3A5",
+                    price: "#F2E3C9",
+                    shadow: "rgba(217, 195, 165, 0.35)"
+
+                },
             },
             {
                 id: 2,
@@ -232,6 +309,12 @@ const productsCollection = {
                 price: 169,
                 image:
                     "https://images.pexels.com/photos/28841107/pexels-photo-28841107.jpeg",
+                theme: {
+                    button: "#A86532",
+                    price: "#D69765",
+                    shadow: "rgba(168, 101, 50, 0.35)"
+                }
+
             },
             {
                 id: 3,
@@ -241,6 +324,11 @@ const productsCollection = {
                 price: 189,
                 image:
                     "https://images.pexels.com/photos/10509252/pexels-photo-10509252.jpeg",
+                theme: {
+                    button: "#363534",
+                    price: "#706E6C",
+                    shadow: "rgba(54, 53, 52, 0.35)"
+                }
             },
             {
                 id: 4,
@@ -250,6 +338,11 @@ const productsCollection = {
                 price: 179,
                 image:
                     "https://images.pexels.com/photos/4109787/pexels-photo-4109787.jpeg",
+                theme: {
+                    button: "#C94B67",
+                    price: "#F28DA4",
+                    shadow: "rgba(201, 75, 103, 0.35)"
+                }
             },
             {
                 id: 5,
@@ -259,6 +352,11 @@ const productsCollection = {
                 price: 199,
                 image:
                     "https://images.pexels.com/photos/18955551/pexels-photo-18955551.jpeg",
+                theme: {
+                    button: "#465375",
+                    price: "#7B8CB5",
+                    shadow: "rgba(70, 83, 117, 0.35)"
+                }
             },
             {
                 id: 6,
@@ -268,6 +366,11 @@ const productsCollection = {
                 price: 209,
                 image:
                     "https://i.pinimg.com/736x/43/31/0c/43310cd053cc2e4baf646dd0cbcd88d2.jpg",
+                theme: {
+                    button: "#B57136",
+                    price: "#E6A265",
+                    shadow: "rgba(181, 113, 54, 0.35)"
+                }
             },
             {
                 id: 7,
@@ -277,6 +380,11 @@ const productsCollection = {
                 price: 229,
                 image:
                     "https://i.pinimg.com/736x/33/da/34/33da34a1b75eaf381da246da5f605b7e.jpg",
+                theme: {
+                    button: "#1F1E1E",
+                    price: "#545151",
+                    shadow: "rgba(31, 30, 30, 0.35)"
+                }
             },
         ],
     },
@@ -409,9 +517,20 @@ function displayCategory(selectedCategory) {
             <p>${product.category}</p>
             <img src="${product.image}">
             <h2>${product.name}</h2>
-            <p>₹${product.price}</p>
+             <p class="category-price">₹${product.price}</p>
         `;
 
+        const categoryPrice = card.querySelector(".category-price");
+        categoryPrice.style.color=product.theme.price;
+
+        const viewBtn = document.createElement("button");
+        viewBtn.textContent = "View Details";
+        viewBtn.style.backgroundColor=product.theme.button;
+        viewBtn.classList.add("view-details-btn");
+
+        viewBtn.style.boxShadow=`0 10px 20px ${product.theme.shadow}`;
+        
+        card.appendChild(viewBtn);
         detailsSection.appendChild(card);
 
     });
@@ -461,14 +580,14 @@ homeProducts.bestSeller.forEach((product) => {
         const exploreBtn = document.createElement("button");
         exploreBtn.textContent = "Explore";
 
-           exploreBtn.style.backgroundColor = product.theme.button;
+        exploreBtn.style.backgroundColor = product.theme.button;
 
-            price.style.color = product.theme.price;
+        price.style.color = product.theme.price;
 
-            exploreBtn.style.boxShadow = `0 10px 20px ${product.theme.shadow}`;
+        exploreBtn.style.boxShadow = `0 10px 20px ${product.theme.shadow}`;
 
-            console.log(product);
-            console.log(product.theme);
+        console.log(product);
+        console.log(product.theme);
 
         exploreBtn.addEventListener("click", () => {
             // console.log(product.category);

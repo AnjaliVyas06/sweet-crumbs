@@ -508,6 +508,22 @@ function displayCategory(selectedCategory) {
 
     detailsSection.innerHTML = "";
 
+     detailsSection.classList.add("category-products");
+     detailsSection.classList.remove("product-info");
+
+     const backBtn =document.createElement("button");
+     backBtn.textContent ="← Back";
+     backBtn.classList.add("category-back");
+
+     backBtn.addEventListener("click",()=>{
+        detailsSection.innerHTML=" ";
+        detailsSection.classList.remove("category-product");
+
+        container.style.display="flex";
+     });
+
+     detailsSection.appendChild(backBtn);
+
     selectedCategory.forEach((product) => {
 
         const card = document.createElement("div");
@@ -591,6 +607,7 @@ homeProducts.bestSeller.forEach((product) => {
 
         exploreBtn.addEventListener("click", () => {
             // console.log(product.category);
+            container.style.display="none";
             const selectedCategory = productsCollection.bestSeller[product.category];
             // console.log(selectedCategory);
             displayCategory(selectedCategory);
